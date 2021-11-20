@@ -1,45 +1,21 @@
-<nav class="navbar navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Navbar w/ text</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-        </li>
-        </ul>
-        <span class="navbar-text">
-        Navbar text with an inline element
-        </span>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a href="#" class="navbar-brand">Udemy App</a>
+        <div class="collapse navbar-collapse">
+            <div class="navbar-nav">
+                <a href="#" class="nav-item nav-link" (click)="showTab('recipe')">Recipe Book</a>
+                <a href="#" class="nav-item nav-link" (click)="showTab('shoppingList')">Shpping  List</a>
+            </div>
+            <div class="navbar-nav ms-auto">
+                <li class="dropdown nav-item" appDropdown>
+                    <a href="#" class="dropdown-toggle nav-link">Manage <span class="caret"></span></a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </div>
+        </div>
     </div>
 </nav>
-<!-- <div class="navbar navbar-dark bg-dark fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <a href="#" class="navbar-brand">Udemy App</a>
-        </div>
-        <div class="navbar-default">
-            <ul class="nav navbar-nav">
-                <li><a href="#">Recipe List</a></li>
-                <li><a href="#">Shopping List</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle">Manage  <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Save Data</a></li>
-                        <li><a href="#">Fetch Data</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-
-    </div>
-</div> -->

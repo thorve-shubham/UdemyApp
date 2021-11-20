@@ -1,0 +1,11 @@
+.recipe{
+    border-radius: 3%;
+    max-height: 500px;
+}
+
+.veg{
+    color : green
+}
+.nonVeg{
+    color: red;
+}

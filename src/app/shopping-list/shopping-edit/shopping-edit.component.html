@@ -1,1 +1,24 @@
-<p>shopping-edit works!</p>
+<div class="row">
+    <div class="col-md-12">
+        <form>
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="name">Name : </label>
+                    <input type="text" id="name" class="form-control" #name>
+                </div>
+                <div class="col-md-1">
+                    <label for="amount">Amount : </label>
+                    <input type="number" id="amount" class="form-control" #amount>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-12">
+                    <button type="button" class="btn btn-success" (click)="addIngredient(name,amount)">Add</button>
+                    <button type="button" class="btn btn-primary">Clear</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

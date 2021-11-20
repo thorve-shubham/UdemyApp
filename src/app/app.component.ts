@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  
+
+  activeTab:string = 'recipe';
+
+  changeTabTo(activeTab: string){
+    this.activeTab = activeTab;
+  }
 }

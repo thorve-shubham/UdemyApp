@@ -1,1 +1,11 @@
-<p>recipe-item works!</p>
+<a href="#" class="list-group-item list-group-item-action" (click)="showRecipeDetails()">
+    <div class="row">
+        <div class="col-md-8">
+            <p class="list-group-item-heading">{{ recipe.name }} <i class="fa fa-stop-circle" [ngClass] = "{ veg : recipe.isVeg, nonVeg : !recipe.isVeg}"></i></p>
+            <p class="list-group-item-text">{{ recipe.description }}</p>
+        </div>
+        <div class="col-md-4">
+            <img [src]="recipe.imageUrl" [alt]="recipe.name" class="img-fluid" class="recipe">
+        </div>
+    </div>
+</a>

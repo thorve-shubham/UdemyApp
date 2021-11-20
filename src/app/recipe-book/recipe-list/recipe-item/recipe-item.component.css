@@ -1,0 +1,10 @@
+.veg{
+    color : green
+}
+.nonVeg{
+    color: red;
+}
+.recipe{
+    max-height: 90px;
+    border-radius: 10%;
+}

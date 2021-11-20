@@ -1,1 +1,38 @@
-<p>recipe-detail works!</p>
+<div class="row">
+    <div class="col-md-12">
+        <img [src]="recipe.imageUrl" class="img-fluid recipe">
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="col-md-12">
+        <h2>{{ recipe.name }} <i class="fa fa-stop-circle" [ngClass] = "{ veg : recipe.isVeg, nonVeg : !recipe.isVeg}"></i></h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="dropdown" appDropdown>
+            <button type="button" class="btn btn-dark dropdown-toggle"><i class="fa fa-cog"></i>&nbsp;&nbsp;Manage Recipe&nbsp;<span class="caret"></span></button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#" (click)="addIngredientsToShoppingList()">To Shopping List</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-md-12">
+        <strong>Description :</strong> {{ recipe.description }}
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let ingredient of recipe.ingredients">
+                {{ ingredient.name }} - {{ ingredient.amount }}
+            </li>
+        </ul>
+    </div>
+</div>
