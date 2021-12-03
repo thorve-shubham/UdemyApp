@@ -1,0 +1,18 @@
+import { NgModule } from "@angular/core";
+import { RouterModule, Routes } from "@angular/router";
+import { RecipeBookComponent } from "./recipe-book/recipe-book.component";
+import { ShoppingListComponent } from "./shopping-list/shopping-list.component";
+
+const routes : Routes = [
+    { path : "shoppingList", component : ShoppingListComponent},
+    { path : "recipeBook", component : RecipeBookComponent},
+    { path : "", redirectTo : "/shoppingList", pathMatch: "full"}
+];
+
+@NgModule({
+    imports : [RouterModule.forRoot(routes)],
+    exports : [RouterModule]
+})
+export class AppRoutingModule {
+
+}
