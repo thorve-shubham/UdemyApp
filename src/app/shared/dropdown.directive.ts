@@ -20,9 +20,9 @@ export class DropdownDirective implements OnInit{
     toggleOpen(event: Event) {
         this.show = this.elRef.nativeElement.contains(event.target) ? !this.show : false;
         if(this.show){
-            this.renderer.addClass(this.elRef.nativeElement.querySelector(".dropdown-menu"),"show");
+            this.renderer.addClass(this.elRef.nativeElement.parentNode.querySelector(".dropdown-menu"),"show");
         }else{
-            this.renderer.removeClass(this.elRef.nativeElement.querySelector(".dropdown-menu"),"show");
+            this.renderer.removeClass(this.elRef.nativeElement.parentNode.querySelector(".dropdown-menu"),"show");
         }
     }
 

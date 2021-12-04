@@ -1,4 +1,4 @@
-<a href="#" class="list-group-item list-group-item-action" (click)="showRecipeDetails()">
+<a class="list-group-item list-group-item-action pointer" style="cursor: pointer;" [routerLink]="['/recipe',index]" routerLinkActive="active" >
     <div class="row">
         <div class="col-md-8">
             <p class="list-group-item-heading">{{ recipe.name }} <i class="fa fa-stop-circle" [ngClass] = "{ veg : recipe.isVeg, nonVeg : !recipe.isVeg}"></i></p>

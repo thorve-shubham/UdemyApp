@@ -7,10 +7,4 @@ import { Component, EventEmitter, Output } from "@angular/core";
 })
 export class HeaderComponent{
 
-    @Output('activeTab')
-    activeTab = new EventEmitter<string>();
-
-    showTab(tabName:string){
-        this.activeTab.emit(tabName);
-    }
 }

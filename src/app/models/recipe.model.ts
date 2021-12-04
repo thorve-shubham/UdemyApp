@@ -6,12 +6,14 @@ export class Recipe{
     public imageUrl: string;
     public isVeg: boolean;
     public ingredients : Ingredient[];
+    public id : number;
 
-    constructor(name:string,desc:string,imageUrl:string,isVeg:boolean,ingredients){
+    constructor(id:number,name:string,desc:string,imageUrl:string,isVeg:boolean,ingredients){
         this.description = desc;
         this.name = name;
         this.imageUrl = imageUrl;
         this.isVeg = isVeg;
         this.ingredients = ingredients;
+        this.id = id;
     }
 }

@@ -7,9 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  activeTab:string = 'recipe';
-
-  changeTabTo(activeTab: string){
-    this.activeTab = activeTab;
-  }
 }
